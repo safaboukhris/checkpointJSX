@@ -1,8 +1,9 @@
 import React from 'react';
+import product from './product';
 
-const Name = ({name}) => {
+const Name = () => {
   return (
-    <h2>{name}</h2>
+    <h2>{product.name}</h2>
     );
 }
 

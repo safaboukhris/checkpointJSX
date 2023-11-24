@@ -1,8 +1,9 @@
 import React from 'react';
+import product from './product'
 
-const Price = ({price}) => {
+const Price = () => {
   return (
-      <p>{price} Dt</p>
+      <p>{product.price} Dt</p>
   );
 }
 

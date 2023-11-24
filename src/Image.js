@@ -1,8 +1,9 @@
 import React from 'react';
+import Product from './product.js'
 
-const Image = ({cartable}) => {
+const Image = () => {
   return (
-      <img  src={'./Cartable.jpg'}  alt='schoolbag' />
+      <img  src={Product.image}  alt='schoolbag' />
   );
 };
 

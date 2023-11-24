@@ -2,11 +2,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import product from './product';
 import Name from './Name';
 import Price from './Price';
 import Description from './Description';
 import Image from './Image';
+import product from './product';
 
 
 const firstName = "School bag";
@@ -17,20 +17,20 @@ function App() {
     <div className="App">
     <Card  className="card" style={{ width: '18rem' }}>
     {/* import of the component Image.js */}
-    <Card.Img variant="top" /><Image image={product.image}/>  
+    <Card.Img variant="top" /><Image />  
     <Card.Body>
     {/* import of the component Name.js */}
-    <Card.Title>
-    <Name name={product.name} />
+      <Card.Title>
+          <Name  />
       </Card.Title>
       <Card.Text>
       {/* import of the component Description .js*/}
-      <Description  description={product.description}/>
+      <Description />
       </Card.Text>
     </Card.Body>
     <ListGroup className="list-group-flush">
     {/* import of the component Price.js */}
-      <ListGroup.Item><Price  price={product.price}/></ListGroup.Item>
+      <ListGroup.Item><Price /></ListGroup.Item>
       <ListGroup.Item>Color: Blue</ListGroup.Item>
     </ListGroup>
   </Card>
